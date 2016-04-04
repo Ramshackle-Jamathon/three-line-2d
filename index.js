@@ -33,7 +33,7 @@ module.exports = function(THREE) {
         this.addAttribute('position', this._positions)
         this.addAttribute('lineNormal', this._normals)
         this.addAttribute('lineMiter', this._miters)
-        this.addAttribute('index', this._indices)
+        this.setIndex(this._indices)
 
         if (opt.distances)
             this.addAttribute('lineDistance', this._distances)
